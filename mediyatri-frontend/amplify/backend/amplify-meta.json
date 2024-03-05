@@ -1,0 +1,60 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mediyatrifrontend-dev-140332-authRole",
+      "UnauthRoleArn": "arn:aws:iam::069002674301:role/amplify-mediyatrifrontend-dev-140332-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::069002674301:role/amplify-mediyatrifrontend-dev-140332-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-mediyatrifrontend-dev-140332-deployment",
+      "UnauthRoleName": "amplify-mediyatrifrontend-dev-140332-unauthRole",
+      "StackName": "amplify-mediyatrifrontend-dev-140332",
+      "StackId": "arn:aws:cloudformation:us-east-1:069002674301:stack/amplify-mediyatrifrontend-dev-140332/90b1b980-d86f-11ee-a45a-0e0e5a47e273",
+      "AmplifyAppId": "d2h5xwetbwh51w"
+    }
+  },
+  "auth": {
+    "mediyatrifrontend8bb999a0": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [
+          "GOOGLE"
+        ],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-mediyatrifrontend-dev-140332-deployment/amplify-cfn-templates/auth/mediyatrifrontend8bb999a0-cloudformation-template.json",
+        "logicalId": "authmediyatrifrontend8bb999a0"
+      },
+      "lastPushTimeStamp": "2024-03-02T08:41:21.330Z",
+      "output": {
+        "UserPoolId": "us-east-1_DNFcwxoNa",
+        "AppClientIDWeb": "14fgfhpavqqojjg5erhakvvsqi",
+        "AppClientID": "6dace1ud9l7gmm7ri97noq0g0a",
+        "HostedUIDomain": "mediyatrifrontend8bb999a0-8bb999a0-dev",
+        "IdentityPoolId": "us-east-1:c32f0cdd-1f78-407a-a9a5-4ef9c93264c7",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:069002674301:userpool/us-east-1_DNFcwxoNa",
+        "IdentityPoolName": "mediyatrifrontend8bb999a0_identitypool_8bb999a0__dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\",\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}",
+        "UserPoolName": "mediyatrifrontend8bb999a0_userpool_8bb999a0"
+      },
+      "lastPushDirHash": "3LZBWwP24cAig0LicPx/3wpO5R0="
+    }
+  }
+}
